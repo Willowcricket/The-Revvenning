@@ -26,4 +26,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    /*public void OnCollisionEnter2D(Collision2D otherObject)
+    {
+        Debug.Log("The Player Has Collided With " + otherObject.gameObject.name);
+        Destroy(this.gameObject);
+    }*/
 }
