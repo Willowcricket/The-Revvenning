@@ -8,7 +8,7 @@ public class Background : MonoBehaviour
 {
     public Transform tf;
     public Vector3 tfpos = new Vector3(10.85f,0.0f,0.0f);
-    public float movementSpeed = 8.0f;
+    public float movementSpeed = 10.0f;
 
     // Start is called before the first frame update
     void Start()

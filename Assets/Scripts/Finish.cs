@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Finish : MonoBehaviour
 {
     public Transform tf;
     public float movementSpeed = 8.0f;
@@ -23,10 +23,10 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            Debug.Log("Player Died");
-            SoundManageer.PlaySound("CarCrash");
+            Debug.Log("Player Won");
+            SoundManageer.PlaySound("YouWon");
             Destroy(other.gameObject);
-            GameObject.Find("GameOver").transform.position = new Vector3(0.0f, 0.0f, -0.25f);
+            GameObject.Find("GameWon").transform.position = new Vector3(0.0f, 0.0f, -0.25f);
         }
     }
 }

@@ -26,9 +26,16 @@ public class Player : MonoBehaviour
         }
     }
 
-    /*public void OnCollisionEnter2D(Collision2D otherObject)
+    /*void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("The Player Has Collided With " + otherObject.gameObject.name);
-        Destroy(this.gameObject);
+        Debug.Log("The " + other.gameObject.name + " GameObject Has Hit The Killbox");
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        Debug.Log("The " + other.gameObject.name + " GameObject Has Left The Killbox");
+        Debug.Log("The " + other.gameObject.name + " GameObject Has Been Deleted");
+        Destroy(other.gameObject);
     }*/
+
 }
